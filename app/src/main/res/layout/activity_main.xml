@@ -10,7 +10,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:gravity="center"
-        android:text="学习Android时的demo程序" />
+        android:text="学习Android时的demo程序(kotlin)" />
 
     <ListView
         android:id="@+id/listview"
