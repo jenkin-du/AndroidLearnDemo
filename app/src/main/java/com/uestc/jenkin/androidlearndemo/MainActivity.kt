@@ -16,17 +16,29 @@ class MainActivity : AppCompatActivity() {
         val listView = findViewById<ListView>(R.id.listview)
         val items = ArrayList<String>()
         items.add("可伸缩里列表")
+        items.add("DrawView 滑动")
+        items.add("PorterDuffXfermode")
 
 
         val adapter: ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_1, items)
         listView.adapter = adapter
         //设置监听器
-        listView.setOnItemClickListener { parent, view, position, id ->
+        listView.setOnItemClickListener { _, _, position, _ ->
 
             val intent = Intent()
             when (position) {
                 0 -> {
                     intent.setClass(this@MainActivity, AnimListActivity::class.java);
+                    startActivity(intent)
+                }
+
+                1 -> {
+                    intent.setClass(this@MainActivity, DrawViewActivity::class.java);
+                    startActivity(intent)
+                }
+
+                2 -> {
+                    intent.setClass(this@MainActivity, PorterDuffXfermodeActivity::class.java)
                     startActivity(intent)
                 }
 
