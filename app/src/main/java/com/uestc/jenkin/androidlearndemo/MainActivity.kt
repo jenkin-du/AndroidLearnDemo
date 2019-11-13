@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         items.add("可伸缩里列表")
         items.add("DrawView 滑动")
         items.add("PorterDuffXfermode")
+        items.add("自定义SurfaceView")
 
 
         val adapter: ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_1, items)
@@ -39,6 +40,11 @@ class MainActivity : AppCompatActivity() {
 
                 2 -> {
                     intent.setClass(this@MainActivity, PorterDuffXfermodeActivity::class.java)
+                    startActivity(intent)
+                }
+
+                3 -> {
+                    intent.setClass(this@MainActivity, SurfaceViewActivity::class.java)
                     startActivity(intent)
                 }
 

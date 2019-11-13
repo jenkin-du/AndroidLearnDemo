@@ -22,7 +22,8 @@
         <activity android:name=".AnimListActivity" />
         <activity android:name=".SecondActivity" />
         <activity android:name=".DrawViewActivity" />
-        <activity android:name=".PorterDuffXfermodeActivity"/>
+        <activity android:name=".PorterDuffXfermodeActivity" />
+        <activity android:name=".SurfaceViewActivity" />
     </application>
 
 </manifest>
