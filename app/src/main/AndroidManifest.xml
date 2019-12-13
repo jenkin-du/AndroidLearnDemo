@@ -24,6 +24,8 @@
         <activity android:name=".DrawViewActivity" />
         <activity android:name=".PorterDuffXfermodeActivity" />
         <activity android:name=".SurfaceViewActivity" />
+        <activity android:name=".MenuAnimActivity"/>
+        <activity android:name=".BlurActivity"/>
     </application>
 
 </manifest>

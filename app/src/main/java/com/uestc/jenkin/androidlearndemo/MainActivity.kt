@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
         items.add("DrawView 滑动")
         items.add("PorterDuffXfermode")
         items.add("自定义SurfaceView")
+        items.add("灵动菜单")
+        items.add("图片模糊")
 
 
         val adapter: ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_1, items)
@@ -45,6 +47,15 @@ class MainActivity : AppCompatActivity() {
 
                 3 -> {
                     intent.setClass(this@MainActivity, SurfaceViewActivity::class.java)
+                    startActivity(intent)
+                }
+
+                4 -> {
+                    intent.setClass(this@MainActivity, MenuAnimActivity::class.java)
+                    startActivity(intent)
+                }
+                5 -> {
+                    intent.setClass(this@MainActivity, BlurActivity::class.java)
                     startActivity(intent)
                 }
 
