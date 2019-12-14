@@ -9,9 +9,11 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
         val listView = findViewById<ListView>(R.id.listview)
         val items = ArrayList<String>()
@@ -21,6 +23,9 @@ class MainActivity : AppCompatActivity() {
         items.add("自定义SurfaceView")
         items.add("灵动菜单")
         items.add("图片模糊")
+        items.add("Android 5.x 新特性 clip")
+        items.add("Activity跳转动画")
+        items.add("Ripple效果")
 
 
         val adapter: ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_1, items)
@@ -31,12 +36,12 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent()
             when (position) {
                 0 -> {
-                    intent.setClass(this@MainActivity, AnimListActivity::class.java);
+                    intent.setClass(this@MainActivity, AnimListActivity::class.java)
                     startActivity(intent)
                 }
 
                 1 -> {
-                    intent.setClass(this@MainActivity, DrawViewActivity::class.java);
+                    intent.setClass(this@MainActivity, DrawViewActivity::class.java)
                     startActivity(intent)
                 }
 
@@ -54,8 +59,24 @@ class MainActivity : AppCompatActivity() {
                     intent.setClass(this@MainActivity, MenuAnimActivity::class.java)
                     startActivity(intent)
                 }
+
                 5 -> {
                     intent.setClass(this@MainActivity, BlurActivity::class.java)
+                    startActivity(intent)
+                }
+
+                6 -> {
+                    intent.setClass(this@MainActivity, ClipActivity::class.java)
+                    startActivity(intent)
+                }
+
+                7 -> {
+                    intent.setClass(this@MainActivity, TransitionActivity::class.java)
+                    startActivity(intent)
+                }
+
+                8 -> {
+                    intent.setClass(this@MainActivity, RippleActivity::class.java)
                     startActivity(intent)
                 }
 

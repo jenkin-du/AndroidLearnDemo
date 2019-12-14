@@ -24,8 +24,12 @@
         <activity android:name=".DrawViewActivity" />
         <activity android:name=".PorterDuffXfermodeActivity" />
         <activity android:name=".SurfaceViewActivity" />
-        <activity android:name=".MenuAnimActivity"/>
-        <activity android:name=".BlurActivity"/>
+        <activity android:name=".MenuAnimActivity" />
+        <activity android:name=".BlurActivity" />
+        <activity android:name=".ClipActivity" />
+        <activity android:name=".TransitionActivity" />
+        <activity android:name=".Transition2Activity" />
+        <activity android:name=".RippleActivity" />
     </application>
 
 </manifest>
