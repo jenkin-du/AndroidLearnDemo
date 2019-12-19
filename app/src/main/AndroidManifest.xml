@@ -30,6 +30,7 @@
         <activity android:name=".TransitionActivity" />
         <activity android:name=".Transition2Activity" />
         <activity android:name=".RippleActivity" />
+        <activity android:name=".CircularRevealActivity" />
     </application>
 
 </manifest>

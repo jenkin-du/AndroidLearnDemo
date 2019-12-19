@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         items.add("Android 5.x 新特性 clip")
         items.add("Activity跳转动画")
         items.add("Ripple效果")
+        items.add("Circular Reveal")
 
 
         val adapter: ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_1, items)
@@ -77,6 +78,11 @@ class MainActivity : AppCompatActivity() {
 
                 8 -> {
                     intent.setClass(this@MainActivity, RippleActivity::class.java)
+                    startActivity(intent)
+                }
+
+                9 -> {
+                    intent.setClass(this@MainActivity, CircularRevealActivity::class.java)
                     startActivity(intent)
                 }
 
